@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    margin: 0;
+    padding: 0;
+}
+html{
+    /* me permite deslizar cuando hag clic en los links del menu */
+    scroll-behavior: smooth;
+}
+/* Menu */
+.contenedor-header{
+    background: #1e2326;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.contenedor-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.contenedor-header header .logo a{
+    font-family: 'Righteous';
+    font-size: 36px;
+    color: #1CB698;
+    text-decoration: none;
+    margin-left: auto;
+}
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+}
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    transition: .5s;
+    text-decoration: none;
+}
+.contenedor-header header nav ul li a:hover{
+    color: #1CB698;
+}
+.nav-responsive{
+    background-color: #1CB698;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+/* Inicio */
+.inicio{
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)), url(imagenes/fondo.jpg);
+    background-color: cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+.inicio .contenedor-banner{
+    padding: 20px;
+    background-color: #1e2326;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+.inicio .contenedor-banner img{
+    margin-top: 40px;
+    border: 10px solid #1CB698;
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 100%;
+}
+.inicio .contenedor-banner h1{
+    margin-top: 40px;
+    font-size: 42px;
+    font-family: 'Righteous';
+}
+.inicio .contenedor-banner h2{
+    font-size: 15px;
+    font-weight: normal;
+}
+.diapositiva{
+    background-color: #1e2326;
+    color: #fff;
+    padding: 70px 20px;
+}
+.diapositiva .contenido-seccion{
+    max-width: 1110px;
+    margin: auto;
+}
+.diapositiva h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.diapositiva .contenido-seccion{
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+.diapositiva .contenido-seccion p span{
+    color: #1CB698;
+    font-weight: bold;
+}
+.diapositiva .galeria{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#anterior, #siguiente{
+    background-color: #1CB698;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 20px;
+}
+.cards li{
+   list-style: none;
+   background-color: #1CB698;
+   border: #1CB698;
+   padding: 10px;
+   margin: 50px;    
+   display: none;
+   border-radius: 30px;
+}
+.cards li.visible{
+    display: block;
+}
+.cards li img{
+    width: 100%;
+    border-radius: 30px;
+}
+a{
+    text-decoration: none;
+}
+.diapositiva button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+.diapositiva button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1CB698;
+    z-index: -1;
+    transition: 1s;
+}
+.diapositiva button:hover .overlay{
+    width: 100%;
+}
+.participantes{
+    background-color: #1e2326;
+    color: #fff;
+    padding: 0px 20px;
+}
+.participantes .contenido-seccion{
+    max-width: 1110px;
+    margin: auto;
+}
+.participantes h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 50px;
+    margin-top: -40px;
+}
+.participantes .contenido-seccion{
+    font: 18px;
+    line-height: 22px;
+    margin-top: -20px;
+}
+.part li{
+    list-style: none;
+    text-align: center;
+    font: 18px;
+}
+
